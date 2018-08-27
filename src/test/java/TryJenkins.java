@@ -8,7 +8,7 @@ public class TryJenkins {
 
         @Test
         public void launchTest() {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", chromeDriverPath);
             WebDriver driver = new ChromeDriver();
             driver.get("https://www.google.com/");
             driver.quit();
